@@ -1,7 +1,9 @@
 package com.mts.bean;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -14,7 +16,9 @@ public class Staff implements Serializable {
 
     @Id @GeneratedValue
     private Long id;
+    private Date data;
     
+    @Column(length = 45)
     private String name;
     
     @Enumerated(EnumType.STRING)
