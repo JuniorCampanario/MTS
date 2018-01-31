@@ -14,7 +14,135 @@
 <body>
     <div class="container" id="chamoisNavBar"></div>
     <div class="container">
-        <h1>This is a Employee Page</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="employeeName">Name</label>
+                    <input type="text" class="form-control" id="employeeName" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="employeeNumber">Number</label>
+                    <input type="text" class="form-control" id="employeeNumber" placeholder="Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Permission</th>
+                    <th scope="col">Full/Part Time</th>
+                    <th scope="col">Trained Sector</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Junior C.</th>
+                    <td>TL</td>
+                    <td>A+</td>
+                    <td>Full Time</td>
+                    <td>PR/WD</td>
+                </tr>
+                <tr>
+                    <th>Cassio</th>
+                    <td>ST</td>
+                    <td>A+</td>
+                    <td>Full Time</td>
+                    <td>PR/WD</td>
+                </tr>
+                <tr>
+                    <th>Michael</th>
+                    <td>CT</td>
+                    <td>A+</td>
+                    <td>Part Time</td>
+                    <td>PR/WD</td>
+                </tr>
+                <tr>
+                    <th>Sanjiv</th>
+                    <td>CT</td>
+                    <td>A+</td>
+                    <td>Full Time</td>
+                    <td>PR/WD</td>
+                </tr>
+                <tr>
+                    <th>Nick H.</th>
+                    <td>ST</td>
+                    <td>A+</td>
+                    <td>Full Time</td>
+                    <td>PR/WD</td>
+                </tr>
+                <tr>
+                    <th>Kelly</th>
+                    <td>SD</td>
+                    <td>A+</td>
+                    <td>Part Time</td>
+                    <td>WD</td>
+                </tr>
+                <tr>
+                    <th>Abebe</th>
+                    <td>SD</td>
+                    <td>A</td>
+                    <td>Full Time</td>
+                    <td>PR</td>
+                </tr>
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
     <!-- Optional JavaScript -->
