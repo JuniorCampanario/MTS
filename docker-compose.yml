@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+    mysql:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: "mts"
+            MYSQL_DATABASE: "mts"
+            MYSQL_ALLOW_EMPTY_PASSWORD: "YES"
+        volumes:
+            - C:\\Users\\JoséRené\\Documents\\GitHub\\MTS\\mysql\\:/var/lib/mysql/data
+    web:
+        image: nginx
+        ports:
+            - "8080:80"
+        volumes:
+            - C:\\Users\\JoséRené\\Documents\\GitHub\\MTS\\mts-html\\:/mts-html
+            - C:\\Users\\JoséRené\\Documents\\GitHub\\MTS\\site.conf:/etc/nginx/conf.d/default.conf
+        links:
+            - php
+    php:
+        image: php:7-fpm
+        volumes:
+            - C:\\Users\\JoséRené\\Documents\\GitHub\\MTS\\mts-html\\:/mts-html
+        links:
+            - mysql
