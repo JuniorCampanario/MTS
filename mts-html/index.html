@@ -1,266 +1,323 @@
 <!doctype html>
 <script src="js/webcomponents-lite.js"></script>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="import" href="menu.html">
-		<script src="js/importMenu.js"></script>
-		<title>Chamois - Home</title>
-	</head>
 
-	<body>
-		<div class="container" id="chamoisNavBar"></div>
-		<div class="container">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="import" href="menu.html">
+	<script src="js/importMenu.js"></script>
+	<title>Chamois - Home</title>
+</head>
 
+<body>
+	<div class="container" id="chamoisNavBar"></div>
+	<!--========== Sectors ==========-->
 
-			<center>
-				<a href="index.html"> 
-					<img src ="img/logo.png" title="Home" alt="The Chamois Car Wash and Detail Center"><br>
-				</a>
-			</center>
-		
-			
-			<chamoisNavBar></br>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+	<div class="container">
+		<div class="row">
 
-				
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-
-						
-							<li class="nav-item active">
-								<a class="nav-link" href="index.html">HOME
-									<span class="sr-only">(current)</span>
-								</a>
-							</li>
-
-
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">REGISTER
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="employee.html">Employee</a>
-									<a class="dropdown-item" href="sector.html">Sector</a>
-									<a class="dropdown-item" href="permission.html">Permission</a>
-									<a class="dropdown-item" href="position.html">Position</a>
+			<!--========== First Modal ==========-->
+			<article class="col-md-4 well">
+				<br>
+				<h3 class="page-header text-center">Prep
+					<br />
+					<small>Total employee on de floor = 8</small>
+				</h3>
+				<hr>
+				<div class="text-center">
+					<a class="btn btn-success" href="#prep" data-toggle="modal">
+						<i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="prep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-header-success">
+								<h2>
+									<i class="glyphicon glyphicon-cloud"></i>PREP</h2>
+							</div>
+							<div class="modal-body">
+								<div class="col-md-12 radio-choices">
+									<div class="col-md-6 col-xs-6 radio-right">
+										<th> Martin </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 02:05 </th>
+										<br>
+										<th> Abebe </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 02:04 </th>
+										<br>
+										<th> Cris </th>
+										<th> CT </th>
+										<th> A+ </th>
+										<th> 02:04 </th>
+										<br>
+										<th> Andrew </th>
+										<th> CT </th>
+										<th> A+ </th>
+										<th> 02:03 </th>
+										<br>
+										<th> Nick H. </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 02:00 </th>
+										<br>
+										<th> Darnell </th>
+										<th> SD </th>
+										<th> C+ </th>
+										<th> 01:59 </th>
+										<br>
+										<th> Adam </th>
+										<th> TL </th>
+										<th> A+ </th>
+										<th> 01:58 </th>
+										<br>
+										<th> Evan </th>
+										<th> TL </th>
+										<th> A+ </th>
+										<th> 01:57 </th>
+										<br>
+									</div>
+									<div class="clearfix"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
+									</div>
 								</div>
-							</li>
-							
-							
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">SCHEDULE
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Manager</a>
-									<a class="dropdown-item" href="#">Prep</a>
-									<a class="dropdown-item" href="wipedown.html">Wipedown</a>
-									<a class="dropdown-item" href="#">Cash & Sale</a>
-									<a class="dropdown-item" href="#">Detail</a>
-								</div>
-							</li>
-
-							
-							<li class="nav-item active">
-								<a class="nav-link" href="login.html">LOGOUT
-									<span class="sr-only">(current)</span>
-								</a>
-							</li>
-							
-							
-						</ul>
-					  
-						<form class="form-inline my-2 my-lg-0">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>			
-						</form>
+							</div>
+						</div>
+						<!-- /.modal-content -->
 					</div>
-				</nav>
-			</chamoisNavBar>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+			</article>
+
+			<!--========== Second Modal ==========-->
+			<article class="col-md-4 well">
+				<br>
+				<h3 class="page-header text-center">Wipedown
+					<br />
+					<small>Total employee on de floor = 9</small>
+				</h3>
+				<hr>
+				<div class="text-center">
+					<a class="btn btn-success" href="#wipedown" data-toggle="modal">
+						<i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="wipedown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-header-success">
+								<h2>
+									<i class="glyphicon glyphicon-cloud"></i>WIPEDOWN</h2>
+							</div>
+							<div class="modal-body">
+								<div class="col-md-12 radio-choices">
+									<div class="col-md-6 col-xs-6 radio-right">
+										<th> Junior </th>
+										<th> TL </th>
+										<th> A+ </th>
+										<th> 02:05 </th>
+										<br>
+										<th> Andrew </th>
+										<th> SV </th>
+										<th> A+ </th>
+										<th> 02:04 </th>
+										<br>
+										<th> Eugene </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 01:34 </th>
+										<br>
+										<th> Harlaj </th>
+										<th> CT </th>
+										<th> A+ </th>
+										<th> 01:33 </th>
+										<br>
+										<th> Carlos A. </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 01:00 </th>
+										<br>
+										<th> Gagandeep G. </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 00:34 </th>
+										<br>
+										<th> Gagandeep K. </th>
+										<th> SD </th>
+										<th> C </th>
+										<th> 00:31 </th>
+										<br>
+										<th> Abrar F. </th>
+										<th> SD </th>
+										<th> C+ </th>
+										<th> 00:25 </th>
+										<br>
+										<th> Deedrin L. </th>
+										<th> SD </th>
+										<th> C </th>
+										<th> 00:05 </th>
+										<br>
+									</div>
+									<div class="clearfix"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+			</article>
+
+			<!--========== Third Modal ==========-->
+			<article class="col-md-4 well">
+				<br>
+				<h3 class="page-header text-center">Cash & Sale
+					<br />
+					<small>Total employee on de floor = 5</small>
+				</h3>
+				<hr>
+				<div class="text-center">
+					<a class="btn btn-success" href="#cashsale" data-toggle="modal">
+						<i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="cashsale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-header-success">
+								<h2>
+									<i class="glyphicon glyphicon-cloud"></i>CASH & SALE</h2>
+							</div>
+							<div class="modal-body">
+								<div class="col-md-12 radio-choices">
+									<div class="col-md-6 col-xs-6 radio-right">
+										<th> Christine U. </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 02:00 </th>
+										<br>
+										<th> Marla </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 01:59 </th>
+										<br>
+										<th> Chelsea </th>
+										<th> SD </th>
+										<th> C </th>
+										<th> 01:55 </th>
+										<br>
+										<th> Naia </th>
+										<th> SD </th>
+										<th> C </th>
+										<th> 01:55 </th>
+										<br>
+										<th> Mackenzie </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 00:35 </th>
+										<br>
+									</div>
+									<div class="clearfix"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+
+			</article>
+			<!--========== Fourth Modal ==========-->
+			<article class="col-md-4 well">
+				<br>
+				<h3 class="page-header text-center">Detail
+					<br />
+					<small>Total employee on de floor = 3</small>
+				</h3>
+				<hr>
+				<div class="text-center">
+					<a class="btn btn-success" href="#detail" data-toggle="modal">
+						<i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header modal-header-success">
+								<h2>
+									<i class="glyphicon glyphicon-cloud"></i>DETAIL</h2>
+							</div>
+							<div class="modal-body">
+								<div class="col-md-12 radio-choices">
+									<div class="col-md-6 col-xs-6 radio-right">
+										<th> Sydney </th>
+										<th> SD </th>
+										<th> A+ </th>
+										<th> 02:03 </th>
+										<br>
+										<th> Mitchell </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 02:01 </th>
+										<br>
+										<th> Brock </th>
+										<th> SD </th>
+										<th> A </th>
+										<th> 01:57 </th>
+										<br>
+									</div>
+									<div class="clearfix"></div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+			</article>
+
+			<article class="col-md-4 well">
+				<br>
+				<h3 class="page-header text-center">TOTAL
+					<br />
+					<small>Total employee = 25</small>
+				</h3>
+				<hr>
+			</article>
 		</div>
+	</div>
 
-		<!--========== Sectors ==========-->			
-			
-		<div class="container">
-			<div class="row">
 
-				<!--========== First Modal ==========-->
-				<article class="col-md-4 well"><br>
-					<h3 class="page-header text-center">Prep<br />
-						<small>Total employee on de floor = 8</small>
-					</h3>
-					<hr> 
-					<div class="text-center">
-						<a class="btn btn-success" href="#prep" data-toggle="modal"><i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
-					</div>
-					<!-- Modal -->
-					<div class="modal fade" id="prep" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header modal-header-success">
-									<h2><i class="glyphicon glyphicon-cloud"></i>PREP</h2>
-								</div>
-								<div class="modal-body">
-									<div class="col-md-12 radio-choices">
-										<div class="col-md-6 col-xs-6 radio-right">
-											<th>  Martin  </th><th>  SD  </th><th>  A+  </th><th>  02:05  </th><br>
-											<th>  Abebe  </th><th>  SD  </th><th>  A  </th><th>  02:04  </th><br>
-											<th>  Cris  </th><th>  CT  </th><th>  A+  </th><th>  02:04  </th><br>
-											<th>  Andrew  </th><th>  CT  </th><th>  A+  </th><th>  02:03  </th><br>
-											<th>  Nick H.  </th><th>  SD  </th><th>  A+  </th><th>  02:00  </th><br>
-											<th>  Darnell  </th><th>  SD  </th><th>  C+  </th><th>  01:59  </th><br>
-											<th>  Adam  </th><th>  TL  </th><th>  A+  </th><th>  01:58  </th><br>
-											<th>  Evan  </th><th>  TL  </th><th>  A+  </th><th>  01:57  </th><br>
-										</div>
-										<div class="clearfix"></div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
-										</div>
-									</div>
-								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-					
-				</article>
-
-				<!--========== Second Modal ==========-->
-				<article class="col-md-4 well"><br>
-					<h3 class="page-header text-center">Wipedown<br />
-						<small>Total employee on de floor = 9</small>
-					</h3>
-					<hr> 
-					<div class="text-center">
-						<a class="btn btn-success" href="#wipedown" data-toggle="modal"><i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
-					</div>
-					<!-- Modal -->
-					<div class="modal fade" id="wipedown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header modal-header-success">
-									<h2><i class="glyphicon glyphicon-cloud"></i>WIPEDOWN</h2>
-								</div>
-								<div class="modal-body">
-									<div class="col-md-12 radio-choices">
-										<div class="col-md-6 col-xs-6 radio-right">
-											<th>  Junior  </th><th>  TL  </th><th>  A+  </th><th>  02:05  </th><br>
-											<th>  Andrew  </th><th>  SV  </th><th>  A+  </th><th>  02:04  </th><br>
-											<th>  Eugene  </th><th>  SD  </th><th>  A  </th><th>  01:34  </th><br>
-											<th>  Harlaj  </th><th>  CT  </th><th>  A+  </th><th>  01:33  </th><br>
-											<th>  Carlos A.  </th><th>  SD  </th><th>  A  </th><th>  01:00  </th><br>
-											<th>  Gagandeep G.  </th><th>  SD  </th><th>  A+  </th><th>  00:34  </th><br>
-											<th>  Gagandeep K.  </th><th>  SD  </th><th>  C  </th><th>  00:31  </th><br>
-											<th>  Abrar F.  </th><th>  SD  </th><th>  C+  </th><th>  00:25  </th><br>
-											<th>  Deedrin L.  </th><th>  SD  </th><th>  C  </th><th>  00:05  </th><br>
-										</div>
-										<div class="clearfix"></div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
-										</div>
-									</div>
-								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-					
-				</article>
-
-				<!--========== Third Modal ==========-->
-				<article class="col-md-4 well"><br>
-					<h3 class="page-header text-center">Cash & Sale<br />
-						<small>Total employee on de floor = 5</small>
-					</h3>
-					<hr> 
-					<div class="text-center">
-						<a class="btn btn-success" href="#cashsale" data-toggle="modal"><i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
-					</div>
-					<!-- Modal -->
-					<div class="modal fade" id="cashsale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header modal-header-success">
-									<h2><i class="glyphicon glyphicon-cloud"></i>CASH & SALE</h2>
-								</div>
-								<div class="modal-body">
-									<div class="col-md-12 radio-choices">
-										<div class="col-md-6 col-xs-6 radio-right">
-											<th>  Christine U.  </th><th>  SD  </th><th>  A  </th><th>  02:00  </th><br>
-											<th>  Marla  </th><th>  SD  </th><th>  A+  </th><th>  01:59  </th><br>
-											<th>  Chelsea  </th><th>  SD  </th><th>  C  </th><th>  01:55  </th><br>
-											<th>  Naia  </th><th>  SD  </th><th>  C  </th><th>  01:55  </th><br>
-											<th>  Mackenzie  </th><th>  SD  </th><th>  A+  </th><th>  00:35  </th><br>
-										</div>
-										<div class="clearfix"></div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
-										</div>
-									</div>
-								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-					
-				</article>
-					<!--========== Fourth Modal ==========-->
-				<article class="col-md-4 well"><br>
-					<h3 class="page-header text-center">Detail<br />
-						<small>Total employee on de floor = 3</small>
-					</h3>
-					<hr> 
-					<div class="text-center">
-						<a class="btn btn-success" href="#detail" data-toggle="modal"><i class="glyphicon glyphicon-eye-open"></i> Visualize</a>
-					</div>
-					<!-- Modal -->
-					<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header modal-header-success">
-									<h2><i class="glyphicon glyphicon-cloud"></i>DETAIL</h2>
-								</div>
-								<div class="modal-body">
-									<div class="col-md-12 radio-choices">
-										<div class="col-md-6 col-xs-6 radio-right">
-											<th>  Sydney  </th><th>  SD  </th><th>  A+  </th><th>  02:03  </th><br>
-											<th>  Mitchell  </th><th>  SD  </th><th>  A  </th><th>  02:01  </th><br>
-											<th>  Brock  </th><th>  SD  </th><th>  A  </th><th>  01:57  </th><br>
-										</div>
-										<div class="clearfix"></div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
-											<button type="button" class="btn btn-primary pull-right" data-enter="modal">Enter</button>
-										</div>
-									</div>
-								</div>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
-				</article>
-
-				<article class="col-md-4 well"><br>
-					<h3 class="page-header text-center">TOTAL<br />
-						<small>Total employee = 25</small>
-					</h3>
-					<hr>
-				</article>
-			</div>
-		</div>
-				
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.2.1.slim.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-	</body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
 
 </html>
