@@ -1,8 +1,18 @@
 <!doctype html>
+<script src="js/webcomponents-lite.js"></script>
 <html lang="en">
-<%@include file="head.jsp"%>
-<body>
-    <%@include file="menu.jsp"%>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="import" href="menu.html">
+		<script src="js/importMenu.js"></script>
+		<title>Chamois - Home</title>
+	</head>
+
+	<body>
+		<div class="container" id="chamoisNavBar"></div>
 			<center><h1>Overview Company</h1></center>
 			<div class="container">
 				<div class="row">
@@ -206,6 +216,13 @@
 					</article>
 				</div>
 			</div>
-    <%@include file="js.jsp"%>
-</body>
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
 </html>
