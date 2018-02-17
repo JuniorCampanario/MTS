@@ -3,3 +3,6 @@ mts-java/.vscode/
 mts-java/mts/.classpath
 mts-java/mts/.project
 mts-java/mts/.settings/
+mts-java-web/tomcat/logs/
+mts-java-web/tomcat/work/
+mts-java-web/tomcat/temp/
