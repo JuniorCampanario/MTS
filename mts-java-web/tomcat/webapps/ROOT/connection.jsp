@@ -4,7 +4,7 @@
 <%
 try {
 Context ctx = new InitialContext();
-DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/mts");
+DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/chamois");
 Connection con = ds.getConnection();
 } catch (Throwable error) {
     error.printStackTrace();
