@@ -4,7 +4,7 @@
         <Resource name="jdbc/chamois" auth="Container" type="javax.sql.DataSource"
                maxTotal="100" maxIdle="30" maxWaitMillis="10000"
                username="chamois" password="chamois" driverClassName="com.mysql.jdbc.Driver"
-               url="jdbc:mysql://localhost:3306/dbchamois?zeroDateTimeBehavior=convertToNull"/>
+               url="jdbc:mysql://localhost:3306/chamois?zeroDateTimeBehavior=convertToNull"/>
               
 
 </Context>
