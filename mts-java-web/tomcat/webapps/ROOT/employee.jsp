@@ -1,3 +1,4 @@
+<%@page contentType="text/html;charset=UTF-8" language="java" session="false" %>
 <!doctype html>
 <html lang="en">
 <%@include file="head.jsp"%>
@@ -79,76 +80,28 @@
 				</tr>
 			</thead>
 			<tbody>
+<%
+			ResultSet rs = st.executeQuery(
+				"SELECT e.employee_name as name, p.position_initial as position,"+ 
+				"pe.permission_initial as permission, e.employee_time as time "+
+				"FROM tbemployee e "+
+				"inner join tbposition p on e.employee_position_id = p.position_id "+
+				"inner join tbpermission pe on e.employee_permission_id = pe.permission_id "+
+				"order by e.employee_name asc");
+			while (rs.next()) {
+%>
 				<tr>
-					<th>Junior C.</th>
-					<td>TL</td>
-					<td>A+</td>
-					<td>Full Time</td>
-					<td>PR/WD</td>
+					<th><%=rs.getString("name")%></th>
+					<td><%=rs.getString("position")%></td>
+					<td><%=rs.getString("permission")%></td>
+					<td><%=rs.getInt("time")==0?"Partial Time":"Full Time"%></td>
+					<td>N/D</td>
 				</tr>
-				<tr>
-					<th>Cassio</th>
-					<td>ST</td>
-					<td>A+</td>
-					<td>Full Time</td>
-					<td>PR/WD</td>
-				</tr>
-				<tr>
-					<th>Michael</th>
-					<td>CT</td>
-					<td>A+</td>
-					<td>Part Time</td>
-					<td>PR/WD</td>
-				</tr>
-				<tr>
-					<th>Sanjiv</th>
-					<td>CT</td>
-					<td>A+</td>
-					<td>Full Time</td>
-					<td>PR/WD</td>
-				</tr>
-				<tr>
-					<th>Nick H.</th>
-					<td>ST</td>
-					<td>A+</td>
-					<td>Full Time</td>
-					<td>PR/WD</td>
-				</tr>
-				<tr>
-					<th>Kelly</th>
-					<td>SD</td>
-					<td>A+</td>
-					<td>Part Time</td>
-					<td>WD</td>
-				</tr>
-				<tr>
-					<th>Abebe</th>
-					<td>SD</td>
-					<td>A</td>
-					<td>Full Time</td>
-					<td>PR</td>
-				</tr>
+<%
+			}
+%>
 			</tbody>
 		</table>
-		<nav aria-label="Page navigation example">
-			<ul class="pagination">
-				<li class="page-item">
-					<a class="page-link" href="#">Previous</a>
-				</li>
-				<li class="page-item">
-					<a class="page-link" href="#">1</a>
-				</li>
-				<li class="page-item">
-					<a class="page-link" href="#">2</a>
-				</li>
-				<li class="page-item">
-					<a class="page-link" href="#">3</a>
-				</li>
-				<li class="page-item">
-					<a class="page-link" href="#">Next</a>
-				</li>
-			</ul>
-		</nav>
 	</div>
     <%@include file="js.jsp"%>
 </body>
